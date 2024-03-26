@@ -20,7 +20,7 @@ class RedisHandler extends ArrayHandler
     /**
      * Array of contexts that have been stored.
      *
-     * @var (string|null)[]
+     * @var list<string|null>
      */
     private array $hydrated = [];
 
