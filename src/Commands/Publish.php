@@ -2,6 +2,7 @@
 
 namespace CodeIgniter\Settings\Commands;
 
+use Config\Autoload;
 use CodeIgniter\CLI\BaseCommand;
 use CodeIgniter\CLI\CLI;
 
