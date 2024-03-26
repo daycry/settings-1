@@ -5,6 +5,7 @@ namespace CodeIgniter\Settings\Config;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Settings\Handlers\ArrayHandler;
 use CodeIgniter\Settings\Handlers\DatabaseHandler;
+use CodeIgniter\Settings\Handlers\RedisHandler;
 
 class Settings extends BaseConfig
 {
@@ -32,6 +33,14 @@ class Settings extends BaseConfig
         'class'     => DatabaseHandler::class,
         'table'     => 'settings',
         'group'     => null,
+        'writeable' => true,
+    ];
+
+    /**
+     * Redis handler settings
+     */
+    public $redis = [
+        'class'     => RedisHandler::class,
         'writeable' => true,
     ];
 }

@@ -29,7 +29,7 @@ class DatabaseHandler extends ArrayHandler
      *
      * @var list<null>|list<string>
      */
-    private $hydrated = [];
+    private array $hydrated = [];
 
     private Settings $config;
 
@@ -59,7 +59,7 @@ class DatabaseHandler extends ArrayHandler
      * read and stored the first call for each contexts
      * and then retrieved from storage.
      *
-     * @return mixed|null
+     * @return mixed
      */
     public function get(string $class, string $property, ?string $context = null)
     {
